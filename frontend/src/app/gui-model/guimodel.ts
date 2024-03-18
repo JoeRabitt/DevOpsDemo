@@ -87,6 +87,41 @@ export class GuiModel {
                         }
                     ]
                 },
+                {
+                    "id": "DoneForm",
+                    "title": { default: "Done" },
+                    "url": "/done",
+                    "formFieldList": [
+                        {
+                            "id":   "title",
+                            "type": "text",
+                            "name": { default: "Titel" },
+                            "required": true,
+                            "width": 2
+                        },
+                        {
+                            "id": "description",
+                            "type": "text",
+                            "name": { default: "Text" },
+                            "newRow": true,
+                            "maxLength": 4000,
+                            "height": 4,
+                            "width": 2
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
             ],
             "pageList": [
                 {
@@ -104,6 +139,15 @@ export class GuiModel {
                             "icon": "fa-file-alt",
                             "color": "wet-asphalt",
                             "page": "toDoPage",
+                            "width": 2,
+                            "newRow": true,
+                        },
+                        {
+                            "type": "button",
+                            "name": { default: "Done" },
+                            "icon": "fa-solid fa-check",
+                            "color": "wisteria",
+                            "page": "DonePage",
                             "width": 2,
                             "newRow": true,
                         },
@@ -134,6 +178,35 @@ export class GuiModel {
                             "url": "/todo",
                             "form": {
                                 "form": "ToDoForm"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "DonePage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": { default: "Add"},
+                            "icon": "fa-user",
+                            "color": "blue",
+                            "width": 2,
+                            "form" : {
+                                "form" : "DoneForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "name": "Done",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "search": true,
+                            "url": "/done",
+                            "form": {
+                                "form": "DoneForm"
                             }
                         }
                     ]
