@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class ToDoControllerTest {
     
     @Test
-    public void testCreate() {
+    void testCreate() {
         ToDoController controller = new ToDoController();
         var todo = new ToDo(1, "t", "d");
         controller.createTodo(1, todo);
