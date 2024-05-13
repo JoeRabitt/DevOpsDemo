@@ -1,0 +1,138 @@
+{
+  "id": "389814a4-103e-4d31-86de-3bfec3bbe7e0",
+  "version": "2.0",
+  "name": "DevOpsDemo Frontend",
+  "url": "http://localhost:4200",
+  "tests": [{
+    "id": "8700a9e1-3fd5-4f07-9243-95a3121c9a2b",
+    "name": "Name Done Button",
+    "commands": [{
+      "id": "de47e39f-60c7-48cb-8e67-f38a2ec33051",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e7d1639-3a97-47a0-afb2-7f4a218a49ab",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff997584-59ce-4eea-8d82-7e89980d47ce",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.tile-wisteria > .h4",
+      "targets": [
+        ["css=.tile-wisteria", "css:finder"],
+        ["xpath=//div[3]/div/span/span/span/path-button-group/span/div/span/span/path-button/a/div", "xpath:position"]
+      ],
+      "value": "Done"
+    }]
+  }, {
+    "id": "b2235875-4051-4ae6-9b14-538dc5d4d580",
+    "name": "Name Add Button",
+    "commands": [{
+      "id": "15b52e3f-4147-41f4-bff4-59ef7dd999af",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b47fcd3-eb86-430c-9827-9ee79dc46405",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "553x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "870dab36-530e-414d-8549-4e52902ea88d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tile-wisteria > .h4",
+      "targets": [
+        ["css=.tile-wisteria > .h4", "css:finder"],
+        ["xpath=//div[3]/div/span/span/span/path-button-group/span/div/span/span/path-button/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b76c8c1-ef67-41b8-b821-b5a3a2a8f8f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.blue",
+      "targets": [
+        ["css=.blue", "css:finder"],
+        ["xpath=//path-button/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61080f85-f53c-456f-ba58-0a5269784ccf",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.blue > .h4",
+      "targets": [
+        ["css=.blue", "css:finder"],
+        ["xpath=//path-button/a/div", "xpath:position"]
+      ],
+      "value": "Add"
+    }]
+  }, {
+    "id": "ac4e7714-a5d1-4c36-ba58-5902a6ca285c",
+    "name": "Funktion Back Button",
+    "commands": [{
+      "id": "88f4d90e-34ea-4cf6-a4fc-9d496148532f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a91a1d96-ddf3-4107-a3d7-90b8a28b0148",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "557x698",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a72b658-9631-4dac-911e-d229e426d5fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tile-wisteria",
+      "targets": [
+        ["css=.tile-wisteria", "css:finder"],
+        ["xpath=//div[3]/div/span/span/span/path-button-group/span/div/span/span/path-button/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e505c5f-d5b4-478a-89a9-96f8a0c3a05f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.backbutton > .h4",
+      "targets": [
+        ["css=.backbutton", "css:finder"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54b050fa-cd12-4794-bb30-82ae47697f71",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.breadcrumb-item",
+      "targets": [],
+      "value": "Hauptmenü"
+    }]
+  }],
+  "suites": [{
+    "id": "d2e594cf-a21b-41c9-8483-1fdae1f312e2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:4200/"],
+  "plugins": []
+}
