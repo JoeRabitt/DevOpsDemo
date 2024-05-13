@@ -69,5 +69,10 @@ public class DoneController {
         return this.dones.remove(key);
     }
 
+    public Integer count() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'count'");
+    }
+
 
 }
