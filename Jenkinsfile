@@ -18,7 +18,8 @@ pipeline {
 		}
 		stage("Build") {
 			steps {
-				sh './backend/gradlew -p backend test'
+				sh 'chmod +x ./backend/gradlew'
+                sh './backend/gradlew -p backend test'
 				nodejs('NodeJS 20.10.0') {
 					sh '''npm install --prefix frontend
 					    npm run build --prefix frontend'''
