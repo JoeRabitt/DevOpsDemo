@@ -151,6 +151,15 @@ export class GuiModel {
                             "width": 2,
                             "newRow": true,
                         },
+                        {
+                            "type": "button",
+                            "name": { default: "Notes" },
+                            "icon": "fa-solid fa-note-sticky",
+                            "color": "blue",
+                            "page": "DonePage",
+                            "width": 2,
+                            "newRow": false,
+                        },
                     ]
                 },
                 {
