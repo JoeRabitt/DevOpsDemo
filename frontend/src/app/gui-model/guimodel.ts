@@ -160,6 +160,15 @@ export class GuiModel {
                             "width": 2,
                             "newRow": false,
                         },
+                        {
+                            "type": "button",
+                            "name": { default: "Music" },
+                            "icon": "fa-solid fa-music",
+                            "color": "green",
+                            "page": "DonePage",
+                            "width": 2,
+                            "newRow": false,
+                        },
                     ]
                 },
                 {
